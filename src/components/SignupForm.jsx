@@ -1,11 +1,11 @@
 import React from "react";
-const FormField = ({ label, type, placeholder }) => {
+const SignupForm = () => {
   return (
     <div className="field">
       <form>
-        <label className="label">{label}</label>
+        <label className="label">Password</label>
         <div className="control">
-          <input label={label} type={type} placeholder={placeholder} />
+          <input label="" type="" placeholder="" />
         </div>
       </form>
       {/* <form  label={label}  type={type}  placeholder={placeholder}  /> */}
@@ -13,4 +13,4 @@ const FormField = ({ label, type, placeholder }) => {
   );
 };
 
-export default FormField;
+export default SignupForm;

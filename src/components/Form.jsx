@@ -9,6 +9,7 @@ const Form = (data, i) => {
           <FormField
             key={i}
             label={data.label}
+            class={data.class}
             type={data.type}
             placeholder={data.placeholder}
           />
