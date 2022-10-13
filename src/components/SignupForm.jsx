@@ -1,15 +1,12 @@
 import React from "react";
+import FormField from "./FormField";
+
 const SignupForm = () => {
   return (
-    <div className="field">
-      <form>
-        <label className="label">Password</label>
-        <div className="control">
-          <input label="" type="" placeholder="" />
-        </div>
-      </form>
-      {/* <form  label={label}  type={type}  placeholder={placeholder}  /> */}
-    </div>
+    <>
+      <FormField label="Password" type="password" placeholder="password@123" />
+      <button>Submit</button>
+    </>
   );
 };
 
