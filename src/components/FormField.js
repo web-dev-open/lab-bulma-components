@@ -3,7 +3,7 @@ const FormField = ({ label, type, placeholder }) => {
   return (
     <form className="box">
       <div className="field">
-        <label className="label">{label}</label>
+        <label className="label is-flex">{label}</label>
         <div className="control">
           <input
             className="input"
