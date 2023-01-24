@@ -33,7 +33,8 @@ function Navbar() {
         <div className="navbar-end">
           <div className="navbar-item">
             <div className="buttons">
-              <CoolButton buttonClass="is-info" buttonName="Log in" />
+              <CoolButton buttonClass="is-info is-small" buttonName="Log in" />
+              <CoolButton isSmall buttonName="Log in" />
 
               <CoolButton buttonClass="is-primary" buttonName="Sign up" />
             </div>
