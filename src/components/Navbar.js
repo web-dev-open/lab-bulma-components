@@ -1,3 +1,5 @@
+import CoolButton from "./CoolButton";
+
 function Navbar() {
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
@@ -31,10 +33,9 @@ function Navbar() {
         <div className="navbar-end">
           <div className="navbar-item">
             <div className="buttons">
-              <a className="button is-info">Log in</a>
-              <a className="button is-primary">
-                <strong>Sign up</strong>
-              </a>
+              <CoolButton buttonClass="is-info" buttonName="Log in" />
+
+              <CoolButton buttonClass="is-primary" buttonName="Sign up" />
             </div>
           </div>
         </div>

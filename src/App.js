@@ -1,18 +1,11 @@
 import "bulma/css/bulma.css";
 import "./App.css";
-import FormField from "./components/FormField";
-import Navbar from "./components/Navbar";
+import SignupForm from "./components/SignupForm";
 
 function App() {
   return (
     <div>
-      <Navbar />
-      <FormField label="Name" type="text" placeholder="e.g Alex Smith" />
-      <FormField
-        label="Email"
-        type="email"
-        placeholder="e.g. alexsmith@gmail.com"
-      />
+      <SignupForm />
     </div>
   );
 }
