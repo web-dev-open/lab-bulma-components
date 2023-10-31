@@ -1,0 +1,11 @@
+.field{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap : 10px
+}
+.cont{
+    width: 400px;
+   
+}
