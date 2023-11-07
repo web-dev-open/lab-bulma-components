@@ -1,0 +1,8 @@
+/* you can add any custom styling for your component here */
+.field {
+    margin: 1em;
+}
+
+.label {
+    font-weight: bold;
+}
