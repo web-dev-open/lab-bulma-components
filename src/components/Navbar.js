@@ -1,5 +1,6 @@
 import "./Navbar.css";
 import "bulma/css/bulma.css";
+import CoolButton from "./CoolButton";
 
 function Navbar() {
   return (
@@ -32,15 +33,14 @@ function Navbar() {
 
         <div className="navbar-end">
           <div className="navbar-item">
-            <button
-              style={{ marginRight: "10px" }}
-              className="has-background-link has-text-white px-5 py-2 button is-link"
-            >
-              Login
-            </button>
-            <button className=" button has-background-primary has-text-white px-5 py-2 is-link">
-              Signup
-            </button>
+            <CoolButton
+              name="Login"
+              attribute="has-background-link has-text-white px-5 py-2 button is-link"
+            />
+            <CoolButton
+              name="Signup"
+              attribute="button has-background-primary has-text-white px-5 py-2 is-link"
+            />
           </div>
         </div>
       </div>
