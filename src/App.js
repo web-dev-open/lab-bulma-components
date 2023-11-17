@@ -1,23 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import "bulma/css/bulma.css";
 
+// Components
+import Navbar from "./components/Navbar";
+import FormField from "./components/FormField";
+import SignupForm from "./components/SignupForm";
+import CoolButton from "./components/CoolButton";
+// import logo from "./logo.svg";
+// import "./App.css";
+const input = [
+  {
+    label: "Name",
+    type: "text",
+    placeholder: "Enter your name",
+  },
+  {
+    label: "Email",
+    type: "email",
+    placeholder: "Enter your email",
+  },
+];
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <Navbar />
       </header>
+      <main>
+        {input.map((input) => (
+          <FormField
+            key={input.label}
+            label={input.label}
+            type={input.type}
+            placeholder={input.placeholder}
+          />
+        ))}
+        <CoolButton isSuccess={true}>Button 1</CoolButton>
+      </main>
+
+      <footer>
+        <SignupForm />
+        <CoolButton isSuccess={false}>Button 2</CoolButton>
+      </footer>
     </div>
   );
 }
