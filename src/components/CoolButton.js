@@ -28,14 +28,13 @@ const classMap = {
     isWhite: 'is-white'
   };
   
-  const CoolButton = (props) => {
-    const classNames = Object.keys(props)
-      .filter((prop) => classMap[prop]) // Filter out props not in classMap
-      .map((prop) => classMap[prop]) // Map props to Bulma class names
-      .join(' '); // Join class names with a space
+  function CoolButton(props)
+  {
+    const classkeys = Object.keys(props).filter((prop) => classMap[prop]) 
+    const classNames=classkeys.map((prop) => classMap[prop]).join(' ');
   
     return (
-      <button className={`button ${classNames}`} {...props}>
+      <button className={`button ${classNames}`}>
         {props.children}
       </button>
     );
