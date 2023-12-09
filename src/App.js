@@ -2,7 +2,7 @@ import "./App.css";
 import  "bulma/css/bulma.css";
 
 
-import SignupForm from "./components/Signupform.js";
+import SignupForm from "./components/SignupForm.js";
 import CoolButton from "./components/CoolButton.js";
 import Message from "./components/Message.js";
 
