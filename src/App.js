@@ -10,12 +10,12 @@ function App() {
   return (
     <div className="App">
       <SignupForm />
-
-      <CoolButton isSuccess>Button 1</CoolButton>
-      <CoolButton> Button 2 </CoolButton>
-      <CoolButton  isSmall  isDanger  isRounded>Button 1</CoolButton>
+       <br></br>
+      <CoolButton isSuccess>Button 1</CoolButton>&nbsp;&nbsp;&nbsp;&nbsp;
+      <CoolButton> Button 2 </CoolButton>&nbsp;&nbsp;&nbsp;
+      <CoolButton  isSmall  isDanger  isRounded>Button 1</CoolButton>&nbsp;&nbsp;
       <CoolButton  isSmall  isSuccess>Button 2</CoolButton>
-
+      
       <Message  isInfo  title="Hello World">
 	      Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
 	      <strong>Pellentesque risus mi</strong>.
