@@ -1,5 +1,11 @@
 import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import  "bulma/css/bulma.css";
+
+
+import SignupForm from "./components/SignupForm.js";
+import CoolButton from "./components/CoolButton.js";
+
 
 function App() {
   return (
@@ -18,8 +24,17 @@ function App() {
           Learn React
         </a>
       </header>
+      <SignupForm />
+
+      <CoolButton isSuccess>Button 1</CoolButton>
+      <CoolButton> Button 2 </CoolButton>
+      <CoolButton  isSmall  isDanger  isRounded>Button 1</CoolButton>
+      <CoolButton  isSmall  isSuccess>Button 2</CoolButton>
+
     </div>
   );
 }
 
+
 export default App;
+
