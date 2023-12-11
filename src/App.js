@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import  "bulma/css/bulma.css";
 import './App.css';
+import SignupForm from "./components/SignupForm";
+import CoolButton from "./components/CoolButton";
+import Message from './components/Message';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SignupForm />
+      <CoolButton isSmall isDanger isRounded>Button 1</CoolButton>
+      <CoolButton isSmall isSuccess>Button 2</CoolButton>
+      <div className="message-container">
+        <Message isInfo title="Hello World" size="is-medium">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>.
+        </Message>
+      </div>
     </div>
   );
 }
