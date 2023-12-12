@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+
+// src/App.js
+import Message from './components/Message';
+import CoolButton from './components/CoolButton';
+import SignupForm from './components/SignupForm';
+import FormField from './components/FormField';
+import Navbar from './components/Navbar';
+import  "bulma/css/bulma.css";
+import  "./App.css";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+return  <div  className="App">
+    <Navbar />
+    <FormField label="Name" type="text" placeholder="e.g Alex Smith" />
+    <FormField label="Email" type="email" placeholder="e.g. alexsmith@gmail.com" />
+    <hr/>
+    <SignupForm />
+    <hr/>
+    <CoolButton>
+      <button  class="button is-small is-danger is-rounded ">Button 1</button>
+      <button  class="button is-small is-success">Button 2</button>
+      <button  class="button is-small is-success is-rounded is-loading">Button 3</button>
+      <button  class="button is-small is-success is-static">Button 4</button>
+      <button  class="button is-large is-success is-outlined">Button 5</button>
+      <button  class="button is-small is-rounded is-black">Button 6</button>
+      <button  class="button is-small is-rounded is-dark">Button 7</button>
+      <button  class="button is-small is-white is-focused">Button 8</button>
+      <button  class="button is-small is-text">Button 9</button>
+      <button  class="button is-small is-info">Button 10</button>
+      <button  class="button is-medium is-warning is-hovered">Button 11</button>
+    </CoolButton>
+    <hr/>
+    <Message  isInfo  title="Hello React ❤️">
+	    Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
+	    <strong>Pellentesque risus mi</strong>.
+    </Message>
+</div>;
+
 }
 
-export default App;
+export  default App;
