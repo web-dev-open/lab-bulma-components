@@ -1,0 +1,22 @@
+/* src/components/FormField.css */
+@import 'bulma/css/bulma.min.css';
+
+.field {
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+    text-align: left;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .input {
+    align-items: end;
+    width: 20%;
+    padding: .5rem;
+    margin-top: 0.5rem;
+    box-sizing: border-box;
+    
+  }
+  
