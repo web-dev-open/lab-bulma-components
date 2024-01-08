@@ -1,0 +1,16 @@
+/* src/components/Navbar.css */
+
+@import 'bulma/css/bulma.min.css';
+
+.navbar {
+    background-color: transparent;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .navbar-item {
+    padding: .5rem 1rem;
+  }
+  
+  .buttons {
+    margin-right: 1rem;
+  }
