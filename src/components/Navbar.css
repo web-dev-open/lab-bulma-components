@@ -1,0 +1,41 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: rgb(15, 49, 108);
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+  
+  .btn {
+    display: flex; /* Add */
+    align-items: center;
+    float: right;
+    margin-top:10px; /* Add */
+  }
+
+  .home-btn{
+    margin-bottom: 10px;
+    align-items: center;
+  }
+  
+  .log-btn,
+  .sign-btn {
+    color: white;
+    background-color: #85144b;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right:20px;
+    
+     
+  }
+  
