@@ -1,0 +1,23 @@
+.bd-tw-button {
+    background-color: #31aed7; /* Light Blue */
+    color: white; 
+    font-weight: bold;
+    border: none;
+    border-radius: 5px; 
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block; 
+}
+
+#td-td-button {
+  background-color: #47cdb0;
+  color: white; 
+  font-weight: bold;
+  border: none;
+  border-radius: 5px; 
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block; 
+}
