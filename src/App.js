@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "bulma/css/bulma.css";
+import Navbar from "./components/Navbar";
+import FormField from "./components/FormField";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* Navbar at the top */}
+      <Navbar />
+
+      {/* Main container for form */}
+      <div
+        className="container"
+        style={{ marginTop: "20px", maxWidth: "500px" }}
+      >
+        <form>
+          <FormField label="Name" type="text" placeholder="e.g. Alex Smith" />
+          <FormField
+            label="Email"
+            type="email"
+            placeholder="e.g. alexsmith@gmail.com"
+          />
+          <FormField label="Password" type="password" placeholder="********" />
+
+          <div className="field is-grouped is-grouped-right">
+            <div className="control">
+              <button type="submit" className="button is-primary">
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   );
 }
