@@ -1,0 +1,41 @@
+// src/components/SignupForm.js
+import React from "react";
+import Navbar from "./Navbar";
+import FormField from "./FormField";
+import CoolButton from "./CoolButton";
+
+function SignupForm() {
+  return (
+    <div>
+      <Navbar />
+
+      <div className="container mt-5">
+        <form>
+          <FormField
+            label="Name"
+            type="text"
+            placeholder="e.g. Alex Smith"
+          />
+
+          <FormField
+            label="Email"
+            type="email"
+            placeholder="e.g. alexsmith@gmail.com"
+          />
+
+          <FormField
+            label="Password"
+            type="password"
+            placeholder="********"
+          />
+
+          <CoolButton isPrimary isRounded>
+            Submit
+          </CoolButton>
+        </form>
+      </div>
+    </div>
+  );
+}
+
+export default SignupForm;
