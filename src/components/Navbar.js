@@ -18,7 +18,10 @@ function Navbar() {
             <CoolButton isPrimary className="mr-2">
               Login
             </CoolButton>
-            <CoolButton isSuccess>Signup</CoolButton>
+
+            <CoolButton isSuccess>
+              Signup
+            </CoolButton>
           </div>
         </div>
       </div>

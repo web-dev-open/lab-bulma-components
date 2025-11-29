@@ -2,12 +2,17 @@
 import React from "react";
 import "./FormField.css";
 
-function FormField({ label, type, placeholder }) {
+function FormField({ label, type = "text", placeholder = "", ...props }) {
   return (
     <div className="field">
       <label className="label">{label}</label>
       <div className="control">
-        <input className="input" type={type} placeholder={placeholder} />
+        <input
+          className="input"
+          type={type}
+          placeholder={placeholder}
+          {...props}
+        />
       </div>
     </div>
   );
